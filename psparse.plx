@@ -5,7 +5,7 @@ sub trunc {
   if (length($name) < $max) {
     return $name;
   }
-  return substr($name, 0, $mid) . "..." . substr($name, length($name) - $mid, $mid);
+  return substr($name, 0, $mid) . "..." . substr($name, -$mid);
 }
 
 next if $. == 1;

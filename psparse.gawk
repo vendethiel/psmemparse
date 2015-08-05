@@ -3,7 +3,7 @@ function trunc(name, max) {
   mid = max / 2
   if (length(name) < max)
     return name
-  return substr(name, 1, mid) "..." substr(name, length(name) - 1 - mid, mid)
+  return substr(name, 1, mid) "..." substr(name, length(name) - 1 - mid, mid + 2)
 }
 
 NR == 1 { next }
