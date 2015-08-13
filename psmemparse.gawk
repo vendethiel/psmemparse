@@ -3,6 +3,7 @@ function trunc(name, max) {
   mid = max / 2
   if (length(name) < max)
     return name
+  # add 2 to mid to balance 1) the .5 in (max/2) 2) 1-indexing
   return substr(name, 1, mid) "..." substr(name, length(name) - 1 - mid, mid + 2)
 }
 
