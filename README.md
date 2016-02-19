@@ -1,7 +1,7 @@
 ps-mem-parse
 ======
 
-Calculates the accumulated RAM, per app, used currently.
+Calculates the accumulated RAM, per app, used currently (displays TOP 5).
 
 
 ### Usage:
@@ -9,6 +9,6 @@ Calculates the accumulated RAM, per app, used currently.
 Pipe one of the script (Perl, gawk) from `ps caux`:
 
 ```
-ps caux | ./psparse.gawk
-ps caux | ./psparse.plx
+ps caux | ./psmemparse.gawk
+ps caux | ./psmemparse.plx
 ```
